@@ -1,5 +1,5 @@
 
-const Paciente = ({ paciente, setPaciente, eliminarPaciente }) => {
+const Paciente = ({ paciente, setPaciente, eliminarPaciente, setReset }) => {
 
     const { nombre, propietario, email, fecha, sintomas, id } = paciente
 
@@ -8,6 +8,7 @@ const Paciente = ({ paciente, setPaciente, eliminarPaciente }) => {
 
         if(respuesta){
             eliminarPaciente(id)
+            setPaciente({})
         }
     }
 

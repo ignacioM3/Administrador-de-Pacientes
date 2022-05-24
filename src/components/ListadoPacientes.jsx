@@ -1,7 +1,5 @@
 import Paciente from "./Paciente"
 
-
-
 export const ListadoPacientes = ({ pacientes, setPaciente, eliminarPaciente }) => {
 
 
